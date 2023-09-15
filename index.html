@@ -40,16 +40,6 @@
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail4" />
                 </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label"
-                        >Password</label
-                    >
-                    <input
-                        type="password"
-                        class="form-control"
-                        id="inputPassword4"
-                    />
-                </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
                     <input
@@ -59,17 +49,7 @@
                         placeholder="1234 Main St"
                     />
                 </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label"
-                        >Address 2</label
-                    >
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="inputAddress2"
-                        placeholder="Apartment, studio, or floor"
-                    />
-                </div>
+               
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">City</label>
                     <input type="text" class="form-control" id="inputCity" />
@@ -148,10 +128,7 @@
                 const firstName = document.getElementById("firstName").value;
                 const lastName = document.getElementById("lastName").value;
                 const email = document.getElementById("inputEmail4").value;
-                const password =
-                    document.getElementById("inputPassword4").value;
                 const address = document.getElementById("inputAddress").value;
-                const address2 = document.getElementById("inputAddress2").value;
                 const city = document.getElementById("inputCity").value;
                 const zip = document.getElementById("inputZip").value;
                 const gender = document.querySelector(
@@ -166,9 +143,7 @@
                     firstName: firstName,
                     lastName: lastName,
                     email: email,
-                    password: password,
                     address: address,
-                    address2: address2,
                     city: city,
                     zip: zip,
                     gender: gender,
@@ -186,11 +161,9 @@
                         );
                     });
 
-                // Clear the form
                 e.target.reset();
             };
 
-            // Add a submit event listener to the form
             const form = document.getElementById("myForm");
             form.addEventListener("submit", handleSubmit);
         </script>
